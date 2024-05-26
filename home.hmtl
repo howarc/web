@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="room">
+        <div id="bookshelf" class="interactive-item" onclick="openSection('aboutMe')">About Me</div>
+        <div id="computer" class="interactive-item" onclick="openSection('projects')">Projects</div>
+        <div id="phone" class="interactive-item" onclick="openSection('contact')">Contact</div>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="content"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
