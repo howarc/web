@@ -28,7 +28,7 @@ function adjustOverflowBasedOnZoom() {
     } else {
         aboutSection.style.overflow = 'hidden';
         projectsSection.style.overflow ='hidden';
-        contactSectionSection.Style.overflow = 'hidden';
+        contactSection.Style.overflow = 'hidden';
     }
 }
 
