@@ -1,5 +1,5 @@
 function checkZoom() {
-    const scale = window.outerWidth / window.innerWidth;
+    const scale = window.devicePixelRatio;
     return scale.toFixed(2);
 }
 
@@ -8,7 +8,7 @@ window.addEventListener('resize', () => {
     console.log("Zoom level: ", zoomLevel);
 
     const menuItems = document.getElementById('menuItems');
-    if (zoomLevel > 1.7) {
+    if (zoomLevel > 1.65) {
         menuItems.style.display = 'block';
     } else {
         menuItems.style.display = 'flex';
@@ -21,7 +21,7 @@ function adjustOverflowBasedOnZoom() {
     var projectsSection = document.querySelector('.projects-section');
     var contactSection = document.querySelector('.contact-section');
 
-    if (zoomLevel > 1.7) { 
+    if (zoomLevel > 1.65) { 
         aboutSection.style.overflow = 'auto';
         projectsSection.style.overflow ='auto';
         contactSection.style.overflow = 'auto';
