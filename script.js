@@ -8,7 +8,7 @@ window.addEventListener('resize', () => {
     console.log("Zoom level: ", zoomLevel);
 
     const menuItems = document.getElementById('menuItems');
-    if (zoomLevel > 1.65) {
+    if (zoomLevel > 1.85) {
         menuItems.style.display = 'block';
     } else {
         menuItems.style.display = 'flex';
@@ -21,7 +21,7 @@ function adjustOverflowBasedOnZoom() {
     var projectsSection = document.querySelector('.projects-section');
     var contactSection = document.querySelector('.contact-section');
 
-    if (zoomLevel > 1.65) { 
+    if (zoomLevel > 1.85) { 
         aboutSection.style.overflow = 'auto';
         projectsSection.style.overflow ='auto';
         contactSection.style.overflow = 'auto';
